@@ -1,7 +1,7 @@
 ### 简介
 kafka消费者Demo
 
-### [kafkaConsumer][1]重要配置参数说明
+### kafkaConsumer重要[配置参数][1]说明
 * `auto.offset.reset`：当offset非法时，使用哪种方式更新offset，其值有`smallest`和`largest`，默认为`largest`。使用一个新的groupid读取数据时，因为offset不存在导致非法，如果设置是`smallest`则会从kafka中最小的offset开始读取数据，如果设置是`largest`则会从新来的数据开始读取，已经存在于kafka中的数据不会在读取。   
 
 ### 逻辑说明
