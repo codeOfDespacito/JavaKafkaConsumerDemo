@@ -19,8 +19,8 @@ public class KafkaConsumerConfig {
      */
     public static ConsumerConfig createConsumerConfig(String a_zookeeper, String a_groupId) {
         Properties props = new Properties();
-        //props.put("auto.offset.reset", "smallest");
-        props.put("auto.offset.reset", "largest");
+        props.put("auto.offset.reset", "smallest");
+        //props.put("auto.offset.reset", "largest");
         props.put("zookeeper.connect", a_zookeeper);
         props.put("group.id", a_groupId);
         props.put("zookeeper.session.timeout.ms", "400");

@@ -24,7 +24,7 @@ public class ComsumerThread implements Runnable {
             messageAndMetadata = it.next();
             String key = new String(messageAndMetadata.key());
             String values = new String(messageAndMetadata.message());
-            System.out.println("kafka key = " + key);
+            //System.out.println("kafka key = " + key);
             System.out.println("kafka value = " + values);
 
         }

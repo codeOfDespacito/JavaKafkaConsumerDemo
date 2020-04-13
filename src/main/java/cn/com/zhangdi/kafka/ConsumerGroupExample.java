@@ -43,6 +43,7 @@ public class ConsumerGroupExample {
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
         topicCountMap.put(topic, new Integer(a_numThreads));
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumer.createMessageStreams(topicCountMap);
+        System.out.println(topic);
         List<KafkaStream<byte[], byte[]>> streams = consumerMap.get(topic);
 
         // now launch all the threads
